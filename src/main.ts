@@ -8,8 +8,15 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
-const vuetify = createVuetify({ components, directives })
+import '@mdi/font/css/materialdesignicons.css'
 
+const vuetify = createVuetify({
+  components,
+  directives,
+  icons: {
+    defaultSet: 'mdi',  // use Material Design Icons
+  },
+})
 const app = createApp(App)
 app.use(vuetify)
 app.use(router)

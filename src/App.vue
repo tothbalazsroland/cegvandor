@@ -2,13 +2,38 @@
   <v-app>
     <!-- NAVBAR -->
     <v-app-bar flat color="white" elevation="1">
-    <v-row align="center" class="px-4" style="width: 100%;">
-        <v-col cols="6" class="text-left text-h6 font-weight-bold">Cégvándor</v-col>
-        <v-col cols="6" class="text-right">
-          <v-btn text>Rólunk</v-btn>
-        </v-col>
-      </v-row>
+      <v-toolbar-title class="text-h6 font-weight-bold">Cégvándor</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="drawer = !drawer">
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
     </v-app-bar>
+
+    <!-- RIGHT-SIDE NAVIGATION DRAWER -->
+    <v-navigation-drawer
+      v-model="drawer"
+      temporary
+      location="right"
+      width="250"
+    >
+      <v-list>
+        <v-list-item link href="/">
+          <v-list-item-title>Főoldal</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item link href="/rolunk">
+          <v-list-item-title>Rólunk</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item link href="/szolgaltatasok">
+          <v-list-item-title>Szolgáltatások</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item link href="/kapcsolat">
+          <v-list-item-title>Kapcsolat</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
 
     <!-- MAIN CONTENT -->
     <v-main>
@@ -61,3 +86,10 @@
     </v-footer>
   </v-app>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+// Drawer open/close state
+const drawer = ref(false)
+</script>
