@@ -60,7 +60,7 @@ const router = useRouter()
 
 const email = ref('')
 const password = ref('')
-const errorInLogin = ref('')
+const errorInLogin = ref(false)
 
 const submitLogin = () => {
   // Basic placeholder login logic
