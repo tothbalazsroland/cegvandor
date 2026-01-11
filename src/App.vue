@@ -26,6 +26,10 @@
         <v-list-item to="/kapcsolat" router>
           <v-list-item-title>{{ $t('nav.contact')}}</v-list-item-title>
         </v-list-item>
+
+        <v-list-item to="/login" router>
+          <v-list-item-title>{{ $t('nav.login')}}</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 

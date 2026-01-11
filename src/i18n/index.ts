@@ -5,6 +5,7 @@ const messages = {
     nav: {
       home: 'Főoldal',
       contact: 'Kapcsolat',
+      login: 'Belépés',
     },
     footer: {
       rights: 'Minden jog fenntartva.',
@@ -34,12 +35,21 @@ const messages = {
       intro: 'Kérdése van, ajánlatot szeretne kérni, vagy együttműködésben gondolkodik? Vegye fel velünk a kapcsolatot, és hamarosan visszajelzünk.',
       phone: 'Telefon'
     },
+    login: {
+      title: 'Bejelentkezés',
+      subtitle: 'Adja meg az adatait a folytatáshoz',
+      email: 'E-mail cím',
+      password: 'Jelszó',
+      submit: 'Bejelentkezés',
+      invalidCredentials: 'Érvénytelen belépési adatok',
+    }
   },
 
   en: {
     nav: {
       home: 'Home',
       contact: 'Contact',
+      login: 'Login',
     },
     footer: {
       rights: 'All rights reserved.',
@@ -72,6 +82,14 @@ const messages = {
         'Do you have questions, want to request a quote, or are considering a partnership? Get in touch with us, and we will respond shortly.',
       phone: 'Phone',
     },
+    login: {
+      title: 'Login',
+      subtitle: 'Enter your credentials to continue',
+      email: 'Email',
+      password: 'Password',
+      submit: 'Login',
+      invalidCredentials: 'Invalid credentials',
+    }
   },
 }
 
