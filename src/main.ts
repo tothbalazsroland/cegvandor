@@ -17,6 +17,26 @@ const vuetify = createVuetify({
   icons: {
     defaultSet: 'mdi',  // use Material Design Icons
   },
+  theme: {
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          // Near-white backgrounds (literal values)
+          background: '#fafafa',
+          surface: '#ffffff',
+
+          // Accent
+          primary: 'rgb(94,212,255)',
+
+          // Text colors (explicit)
+          'on-background': '#111827',
+          'on-surface': '#111827',
+        },
+      },
+    },
+  },
 })
 const app = createApp(App)
 app.use(vuetify)

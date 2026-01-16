@@ -15,6 +15,12 @@ const router = createRouter({
       component: () => import('../pages/ContactUs-View.vue'),
     },
     {
+      path: '/hogyan-mukodunk',
+      name: 'how-it-works',
+      component: () => import('../pages/HowItWorks-View.vue')
+
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../pages/Login-View.vue'),

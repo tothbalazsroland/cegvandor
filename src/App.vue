@@ -1,7 +1,10 @@
 <template>
   <v-app>
     <!-- NAVBAR -->
-    <v-app-bar flat color="white" elevation="1">
+    <v-app-bar flat
+               elevation="1"
+               color="white"
+               floating>
       <v-toolbar-title class="text-h6 font-weight-bold">Cégvándor</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn text @click="setLanguage('hu')">HU</v-btn>
