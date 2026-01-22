@@ -5,8 +5,14 @@
                elevation="1"
                color="white"
                floating>
-      <v-toolbar-title class="text-h6 font-weight-bold">Cégvándor</v-toolbar-title>
+      <v-toolbar-title class="text-h6 font-weight-bold">
+        <router-link to="/" class="home-link">
+          Cégvándor
+        </router-link>
+      </v-toolbar-title>
+
       <v-spacer></v-spacer>
+
       <v-btn text @click="setLanguage('hu')">HU</v-btn>
       <v-btn text @click="setLanguage('en')">EN</v-btn>
       <v-btn icon @click="drawer = !drawer">
@@ -61,3 +67,11 @@ function setLanguage(lang: 'hu' | 'en') {
 // Drawer open/close state
 const drawer = ref(false)
 </script>
+
+<style scoped>
+.home-link {
+  color: inherit;          /* match toolbar text color */
+  text-decoration: none;   /* remove underline */
+  cursor: pointer;         /* show pointer on hover */
+}
+</style>
