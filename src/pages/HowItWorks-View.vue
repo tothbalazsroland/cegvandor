@@ -2,9 +2,9 @@
     <!-- PAGE HEADER -->
     <section class="page-header">
       <v-container class="py-16 text-center">
-        <h1>Hogyan működik</h1>
+        <h1 class="font-weight-bold">{{t('howItWorksPage.title')}}</h1>
         <p class="subtitle mt-4">
-          Egyszerű folyamat, teljes körű szállásmegoldás vállalatok számára.
+          {{t('howItWorksPage.subtitle')}}
         </p>
       </v-container>
     </section>
@@ -14,42 +14,37 @@
       <v-container class="py-16">
         <v-row>
           <v-col cols="12" md="6" class="step">
-            <h3>1. Igény megküldése</h3>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.steps.step1.title')}}</h3>
             <p>
-              Ön megadja a várost vagy régiót, az elhelyezés időtartamát,
-              a munkavállalók létszámát, valamint az esetleges speciális igényeket.
+              {{t('howItWorksPage.steps.step1.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="6" class="step">
-            <h3>2. Ajánlatok készítése</h3>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.steps.step2.title')}}</h3>
             <p>
-              Az igények alapján legalább két különböző szállásajánlatot készítünk,
-              amelyek árban, elhelyezkedésben vagy komfortfokozatban is eltérhetnek.
+              {{t('howItWorksPage.steps.step2.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="6" class="step">
-            <h3>3. Választás</h3>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.steps.step3.title')}}</h3>
             <p>
-              Ön kiválasztja az Önnek legmegfelelőbb megoldást,
-              mi pedig elindítjuk a szervezést.
+              {{t('howItWorksPage.steps.step3.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="6" class="step">
-            <h3>4. Teljes körű ügyintézés</h3>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.steps.step4.title')}}</h3>
             <p>
-              A szervezést teljes egészében átvállaljuk — kapcsolattartás,
-              adminisztráció, egyeztetések és változások kezelése.
+              {{t('howItWorksPage.steps.step4.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="6" class="step">
-            <h3>5. Egyszerű elszámolás</h3>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.steps.step5.title')}}</h3>
             <p>
-              A díjazás havonta vagy kéthetente, egy összesített számla alapján
-              történik, külön ügyintézés nélkül.
+              {{t('howItWorksPage.steps.step5.description')}}
             </p>
           </v-col>
         </v-row>
@@ -61,29 +56,27 @@
       <v-container class="py-16">
         <v-row>
           <v-col cols="12" class="text-center mb-12">
-            <h2>Miért éri meg velünk dolgozni?</h2>
+            <h2 class="font-weight-bold">{{t('howItWorksPage.why.title')}}</h2>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h4>Időmegtakarítás</h4>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.why.items.timeSaving.title')}}</h3>
             <p>
-              Egyetlen partneren keresztül intézhet minden szállással kapcsolatos
-              feladatot.
+              {{t('howItWorksPage.why.items.timeSaving.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h4>Rugalmas megoldások</h4>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.why.items.flexible.title')}}</h3>
             <p>
-              Minden projektet az aktuális igényekhez igazítunk,
-              létszám és időtartam szerint.
+              {{t('howItWorksPage.why.items.flexible.description')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h4>Átlátható elszámolás</h4>
+            <h3 class="font-weight-bold">{{t('howItWorksPage.why.items.transparent.title')}}</h3>
             <p>
-              Egy számla, kiszámítható fizetés, rejtett költségek nélkül.
+              {{t('howItWorksPage.why.items.transparent.description')}}
             </p>
           </v-col>
         </v-row>
@@ -93,20 +86,22 @@
     <!-- CTA -->
     <section class="cta">
       <v-container class="py-16 text-center">
-        <h2>Készen áll az együttműködésre?</h2>
+        <h2>{{t('howItWorksPage.cta.title')}}</h2>
         <v-btn
           color="primary"
           size="large"
           to="/kapcsolat"
         >
-          Lépjen kapcsolatba velünk
+          {{t('howItWorksPage.cta.button')}}
         </v-btn>
       </v-container>
     </section>
 </template>
 
-<script setup>
-// no logic needed
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

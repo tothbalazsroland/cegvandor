@@ -5,24 +5,20 @@
         <v-row justify="center">
           <v-col cols="12" md="8" class="text-center">
             <h1 class="hero-title">
-              Cégvándor – Otthon az Ön munkavállalóinak, bárhol is dolgoznak
+              {{ t('home.title')}}
             </h1>
 
             <p class="hero-subtitle mt-6">
-              Megbízható, rugalmas szállásmegoldásokat kínálunk vállalatok számára –
-              belföldön és külföldön egyaránt. Kifejezetten olyan partnerekkel
-              dolgozunk, akik hosszú távon vagy nagyobb létszámú csapatok
-              elhelyezését keresik.
+              {{ t('home.subtitle')}}
             </p>
 
             <div class="hero-actions mt-10">
               <v-btn
-                variant="outlined"
                 color="primary"
                 size="large"
                 to="/hogyan-mukodunk"
               >
-                Hogyan működik
+                {{t('home.howItWorks')}}
               </v-btn>
             </div>
           </v-col>
@@ -35,30 +31,27 @@
       <v-container class="py-16">
         <v-row>
           <v-col cols="12" class="text-center mb-12">
-            <h2>Miért a Cégvándor?</h2>
+            <h2 class="font-weight-bold">{{ t('home.whyChooseUs')}}</h2>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h3>Egyedi megoldások</h3>
+            <h3 class="font-weight-bold">{{t('home.features.custom.title')}}</h3>
             <p>
-              Minden cég és minden munkavállaló más igényekkel rendelkezik.
-              Mi ezekhez igazodva alakítjuk ki a szállásmegoldásokat.
+              {{ t('home.features.custom.text')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h3>Nemzetközi lefedettség</h3>
+            <h3 class="font-weight-bold"> {{t('home.features.global.title')}}</h3>
             <p>
-              Belföldi vagy külföldi elhelyezés esetén is kiterjedt
-              partnerhálózatunk biztosítja a megfelelő megoldást.
+              {{ t('home.features.global.text')}}
             </p>
           </v-col>
 
           <v-col cols="12" md="4">
-            <h3>Megbízhatóság és kényelem</h3>
+            <h3 class="font-weight-bold">{{t('home.features.reliable.title')}}</h3>
             <p>
-              Gondoskodunk róla, hogy munkavállalói egy hosszú munkanap után
-              valóban otthon érezzék magukat.
+              {{t('home.features.reliable.text')}}
             </p>
           </v-col>
         </v-row>
@@ -71,9 +64,7 @@
         <v-row justify="center">
           <v-col cols="12" md="8" class="text-center">
             <p class="closing-text">
-              A Cégvándor célja, hogy Ön és csapata a munkára koncentrálhasson,
-              miközben mi átvállaljuk a szállással kapcsolatos szervezési és
-              kényelmi feladatokat.
+              {{t('home.outro')}}
             </p>
           </v-col>
         </v-row>
@@ -81,8 +72,10 @@
     </section>
 </template>
 
-<script setup>
-// no logic needed yet
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

@@ -28,7 +28,7 @@
               <v-col cols="12" sm="6">
                 <strong>{{ t('contactus.phone')}}</strong>
                 <div>
-                  +36 XX XXX XXXX
+                  +36 30 235 5615
                 </div>
               </v-col>
             </v-row>
