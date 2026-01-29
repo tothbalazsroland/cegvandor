@@ -51,6 +51,12 @@
     <v-footer color="grey-lighten-4" padless>
       <v-container class="text-center py-6">
         <p class="text-caption">&copy; {{ new Date().getFullYear() }} Cégvándor – {{ $t('footer.rights')}}</p>
+        <RouterLink
+          to="/impresszum"
+          class="text-decoration-none text-medium-emphasis"
+        >
+          Impresszum
+        </RouterLink>
       </v-container>
     </v-footer>
   </v-app>

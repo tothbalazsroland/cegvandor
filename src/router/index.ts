@@ -24,6 +24,10 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: () => import('../pages/Login-View.vue'),
+    },{
+      path: '/impresszum',
+      name: 'impresszum',
+      component: () => import('../pages/Impresszum-View.vue'),
     },
   ],
 })
