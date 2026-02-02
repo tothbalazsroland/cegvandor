@@ -5,11 +5,14 @@
                elevation="1"
                color="white"
                floating>
-      <v-toolbar-title class="text-h6 font-weight-bold">
-        <router-link to="/" class="home-link">
-          Cégvándor
-        </router-link>
-      </v-toolbar-title>
+      <router-link to="/" class="logo-link">
+        <img
+          :src="logo"
+          height="40"
+          alt="Company logo"
+          style="cursor:pointer"
+        />
+      </router-link>
 
       <v-spacer></v-spacer>
 
@@ -29,15 +32,15 @@
     >
       <v-list>
         <v-list-item to="/" router>
-          <v-list-item-title>{{ $t('nav.home')}}</v-list-item-title>
+          <v-list-item-title>{{ $t('nav.home') }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/kapcsolat" router>
-          <v-list-item-title>{{ $t('nav.contact')}}</v-list-item-title>
+          <v-list-item-title>{{ $t('nav.contact') }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/login" router>
-          <v-list-item-title>{{ $t('nav.login')}}</v-list-item-title>
+          <v-list-item-title>{{ $t('nav.login') }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -50,7 +53,8 @@
     <!-- FOOTER -->
     <v-footer color="grey-lighten-4" padless>
       <v-container class="text-center py-6">
-        <p class="text-caption">&copy; {{ new Date().getFullYear() }} Cégvándor – {{ $t('footer.rights')}}</p>
+        <p class="text-caption">&copy; {{ new Date().getFullYear() }} Cégvándor –
+          {{ $t('footer.rights') }}</p>
         <RouterLink
           to="/impresszum"
           class="text-decoration-none text-medium-emphasis"
@@ -65,19 +69,19 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { i18n } from '@/i18n'
-
 function setLanguage(lang: 'hu' | 'en') {
   i18n.global.locale.value = lang
 }
 
+
 // Drawer open/close state
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import logo from '@/assets/logotran2.png'
 const drawer = ref(false)
 </script>
 
 <style scoped>
-.home-link {
-  color: inherit;          /* match toolbar text color */
-  text-decoration: none;   /* remove underline */
-  cursor: pointer;         /* show pointer on hover */
+.logo-link:hover {
+  background: transparent !important;
 }
 </style>
