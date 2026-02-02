@@ -16,8 +16,28 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn text @click="setLanguage('hu')">HU</v-btn>
-      <v-btn text @click="setLanguage('en')">EN</v-btn>
+      <!-- Language selector (globe) -->
+      <v-menu location="bottom end">
+        <template #activator="{ props }">
+          <v-btn
+            icon
+            variant="text"
+            v-bind="props"
+            aria-label="Change language"
+          >
+            <v-icon>mdi-earth</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list density="compact" min-width="150">
+          <v-list-item @click="setLanguage('hu')">
+            <v-list-item-title>🇭🇺 Magyar</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="setLanguage('en')">
+            <v-list-item-title>🇬🇧 English</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       <v-btn icon @click="drawer = !drawer">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
