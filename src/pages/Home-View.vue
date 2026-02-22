@@ -97,7 +97,6 @@ const { t } = useI18n()
 
 .hero-subtitle {
   font-size: 1.1rem;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .why {
@@ -114,7 +113,6 @@ const { t } = useI18n()
 
 .closing-text {
   font-size: 1.1rem;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .hero-logo {
