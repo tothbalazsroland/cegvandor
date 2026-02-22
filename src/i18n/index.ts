@@ -11,9 +11,9 @@ const messages = {
       rights: 'Minden jog fenntartva.',
     },
     home: {
-      title: 'Cégvándor – Az alkalmazottak otthona, bárhol is dolgoznak',
+      title: 'Útközben is otthon',
       subtitle: 'Megbízható, rugalmas szállásmegoldásokat kínálunk cégek számára belföldön és külföldön egyaránt.',
-      howItWorks: 'Hogyan működünk',
+      letUsHandleIt: 'Bízd ránk!',
       whyChooseUs: 'Miért válassza a Cégvándort?',
       features: {
         custom: {
@@ -111,9 +111,9 @@ const messages = {
       rights: 'All rights reserved.',
     },
     home: {
-      title: 'Cégvándor – The home for your employees, wherever they work',
+      title: 'Feel at home on the go.',
       subtitle: 'We offer reliable, flexible accommodation solutions for companies both domestically and internationally.',
-      howItWorks: 'How we work',
+      letUsHandleIt: 'Let us handle it!',
       welcomeMessage:
         'Welcome to Cégvándor, where we provide accommodation solutions tailored to the needs of your company, both domestically and abroad! We specifically look for partners who aim to provide housing for large teams or long-term stays for their employees.',
       whyChooseUs: 'Why choose Cégvándor?',

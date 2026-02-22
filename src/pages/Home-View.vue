@@ -4,6 +4,12 @@
       <v-container class="py-16">
         <v-row justify="center">
           <v-col cols="12" md="8" class="text-center">
+
+            <img
+              src="/src/assets/logoonlytext.png"
+              alt="Logo"
+              class="hero-logo mb-6"
+            />
             <h1 class="hero-title">
               {{ t('home.title')}}
             </h1>
@@ -18,7 +24,7 @@
                 size="large"
                 to="/hogyan-mukodunk"
               >
-                {{t('home.howItWorks')}}
+                {{t('home.letUsHandleIt')}}
               </v-btn>
             </div>
           </v-col>
@@ -109,5 +115,10 @@ const { t } = useI18n()
 .closing-text {
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-logo {
+  max-width: 420px;
+  height: auto;
 }
 </style>

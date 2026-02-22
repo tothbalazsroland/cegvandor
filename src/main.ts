@@ -28,7 +28,7 @@ const vuetify = createVuetify({
           surface: '#ffffff',
 
           // Accent
-          primary: 'rgb(94,212,255)',
+          primary: '#22288d',
 
           // Text colors (explicit)
           'on-background': '#111827',
