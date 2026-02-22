@@ -119,4 +119,15 @@ const { t } = useI18n()
   max-width: 420px;
   height: auto;
 }
+
+.hero-logo {
+  max-width: 420px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 80%;
+  }
+}
 </style>
