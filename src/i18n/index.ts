@@ -6,14 +6,25 @@ const messages = {
       home: 'Főoldal',
       contact: 'Kapcsolat',
       login: 'Belépés',
+      howItWorks: 'Hogyan működünk',
+      cta: 'Ajánlatot kérek',
     },
     footer: {
       rights: 'Minden jog fenntartva.',
+      email: 'info@cegvandor.hu',
+      phone: '+36 30 235 5615',
+      nav: {
+        home: 'Főoldal',
+        howItWorks: 'Hogyan működünk',
+        contact: 'Kapcsolat',
+      },
     },
     home: {
       title: 'Útközben is otthon',
       subtitle: 'Megbízható, rugalmas szállásmegoldásokat kínálunk cégek számára belföldön és külföldön egyaránt.',
       letUsHandleIt: 'Bízd ránk!',
+      ctaSecondary: 'Hogyan működünk?',
+      closingTitle: 'Tegyük könnyebbé a csapatod életét',
       whyChooseUs: 'Miért válassza a Cégvándort?',
       features: {
         custom: {
@@ -36,27 +47,27 @@ const messages = {
       subtitle: 'Egyszerű folyamat, teljes körű ügyintézés, havi egy számla partnereink számára',
       steps: {
         step1: {
-          title: '1. Igény megküldése',
+          title: 'Igény megküldése',
           description:
             'Ön megadja a várost vagy régiót, az elhelyezés időtartamát, a munkavállalók létszámát, valamint az esetleges speciális igényeket.'
         },
         step2: {
-          title: '2. Ajánlatok készítése',
+          title: 'Ajánlatok készítése',
           description:
             'Az igények alapján legalább két különböző szállásajánlatot készítünk, amelyek árban, elhelyezkedésben vagy komfortfokozatban is eltérhetnek.'
         },
         step3: {
-          title: '3. Választás',
+          title: 'Választás',
           description:
             'Ön kiválasztja az Önnek legmegfelelőbb megoldást, mi pedig elindítjuk a szervezést.'
         },
         step4: {
-          title: '4. Teljes körű ügyintézés',
+          title: 'Teljes körű ügyintézés',
           description:
             'A szervezést teljes egészében átvállaljuk — kapcsolattartás, adminisztráció, egyeztetések és változások kezelése.'
         },
         step5: {
-          title: '5. Egyszerű elszámolás',
+          title: 'Egyszerű elszámolás',
           description:
             'A díjazás havonta egy összesített számla alapján történik, külön ügyintézés nélkül.'
         }
@@ -89,6 +100,7 @@ const messages = {
     contactus: {
       title: 'Kapcsolat',
       intro: 'Kérdése van, ajánlatot szeretne kérni, vagy együttműködésben gondolkodik? Vegye fel velünk a kapcsolatot, és hamarosan visszajelzünk.',
+      responseTime: 'Általában 1 munkanapon belül visszajelzünk.',
       phone: 'Telefon'
     },
     login: {
@@ -106,14 +118,25 @@ const messages = {
       home: 'Home',
       contact: 'Contact',
       login: 'Login',
+      howItWorks: 'How It Works',
+      cta: 'Request a Quote',
     },
     footer: {
       rights: 'All rights reserved.',
+      email: 'info@cegvandor.hu',
+      phone: '+36 30 235 5615',
+      nav: {
+        home: 'Home',
+        howItWorks: 'How It Works',
+        contact: 'Contact',
+      },
     },
     home: {
       title: 'Feel at home on the go.',
       subtitle: 'We offer reliable, flexible accommodation solutions for companies both domestically and internationally.',
       letUsHandleIt: 'Let us handle it!',
+      ctaSecondary: 'See how it works',
+      closingTitle: 'Make life easier for your team',
       welcomeMessage:
         'Welcome to Cégvándor, where we provide accommodation solutions tailored to the needs of your company, both domestically and abroad! We specifically look for partners who aim to provide housing for large teams or long-term stays for their employees.',
       whyChooseUs: 'Why choose Cégvándor?',
@@ -123,21 +146,22 @@ const messages = {
           text: 'Every employee has unique needs and preferences. At Cégvándor, we strive to provide personalized comfort and services for each guest.',
         },
         global: {
-          title: 'Global Availability: ',
+          title: 'Global Availability',
           text: 'Whether your accommodation needs are domestic or international, our extensive network allows us to support you and your team anywhere in the world.',
         },
         reliable: {
-          title: 'Reliability and Comfort: ',
-          text: 'We understand that efficiency is key to success. That’s why we ensure your employees have the peace of mind and comfort they need after a long workday.',
+          title: 'Reliability and Comfort',
+          text: "We understand that efficiency is key to success. That's why we ensure your employees have the peace of mind and comfort they need after a long workday.",
         },
       },
       outro:
-        'Cégvándor’s goal is to let you and your team focus on work while we take care of providing a home-like accommodation. Experience the benefits of working with us, and let us manage everything related to comfort and hospitality.',
+        "Cégvándor's goal is to let you and your team focus on work while we take care of providing a home-like accommodation. Experience the benefits of working with us, and let us manage everything related to comfort and hospitality.",
     },
     contactus: {
       title: 'Contact',
       intro:
         'Do you have questions, want to request a quote, or are considering a partnership? Get in touch with us, and we will respond shortly.',
+      responseTime: 'We typically respond within 1 business day.',
       phone: 'Phone',
     },
     howItWorksPage: {
@@ -145,27 +169,27 @@ const messages = {
       subtitle: 'Simple process, full-service administration, one monthly invoice for our partners.',
       steps: {
         step1: {
-          title: '1. Submit your request',
+          title: 'Submit your request',
           description:
             'You provide the city or region, the duration of accommodation, the number of employees, and any special requirements.'
         },
         step2: {
-          title: '2. Offer preparation',
+          title: 'Offer preparation',
           description:
             'Based on your requirements, we prepare at least two different accommodation offers that may differ in price, location, or comfort level.'
         },
         step3: {
-          title: '3. Selection',
+          title: 'Selection',
           description:
             'You choose the solution that suits you best, and we start organizing everything.'
         },
         step4: {
-          title: '4. Full-service management',
+          title: 'Full-service management',
           description:
             'We take care of the entire process — communication, administration, coordination, and handling changes.'
         },
         step5: {
-          title: '5. Simple billing',
+          title: 'Simple billing',
           description:
             'Billing is handled with one consolidated monthly invoice, without additional administration.'
         },
