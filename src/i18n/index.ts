@@ -18,6 +18,8 @@ const messages = {
         howItWorks: 'Hogyan működünk',
         contact: 'Kapcsolat',
       },
+      partners: 'Partnerek',
+      eubText: 'EUB Zrt. utasbiztosítás',
     },
     home: {
       title: 'Útközben is otthon',
@@ -130,6 +132,8 @@ const messages = {
         howItWorks: 'How It Works',
         contact: 'Contact',
       },
+      partners: 'Partners',
+      eubText: 'EUB Zrt. Travel Insurance',
     },
     home: {
       title: 'Feel at home on the go.',

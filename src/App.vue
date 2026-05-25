@@ -81,7 +81,7 @@
         <v-row>
 
           <!-- Brand column -->
-          <v-col cols="12" md="4" class="mb-6 mb-md-0">
+          <v-col cols="12" md="3" class="mb-6 mb-md-0">
             <img :src="logo" height="36" alt="Cégvándor logo" class="mb-4 d-block" />
             <p class="text-body-2 text-medium-emphasis">
               &copy; {{ new Date().getFullYear() }} Cégvándor –
@@ -90,7 +90,7 @@
           </v-col>
 
           <!-- Nav links column -->
-          <v-col cols="6" md="4" class="mb-6 mb-md-0">
+          <v-col cols="6" md="3" class="mb-6 mb-md-0">
             <p class="footer-heading mb-3">{{ $t('footer.nav.home') }}</p>
             <RouterLink to="/" class="footer-link d-block mb-2">
               {{ $t('footer.nav.home') }}
@@ -104,7 +104,7 @@
           </v-col>
 
           <!-- Contact column -->
-          <v-col cols="6" md="4">
+          <v-col cols="6" md="3" class="mb-6 mb-md-0">
             <p class="footer-heading mb-3">{{ $t('nav.contact') }}</p>
             <a :href="`mailto:${$t('footer.email')}`" class="footer-link d-flex align-center mb-2">
               <v-icon size="16" class="mr-1">mdi-email-outline</v-icon>
@@ -113,6 +113,19 @@
             <a :href="`tel:${$t('footer.phone').replace(/\s/g, '')}`" class="footer-link d-flex align-center">
               <v-icon size="16" class="mr-1">mdi-phone-outline</v-icon>
               {{ $t('footer.phone') }}
+            </a>
+          </v-col>
+
+          <!-- Partners column -->
+          <v-col cols="12" md="3">
+            <p class="footer-heading mb-3">{{ $t('footer.partners') }}</p>
+            <a href="https://eub.hu?pcode=53338" target="_blank" rel="noopener" class="partner-link">
+              <img
+                src="https://eub.hu/dokumentumok/eublogo.jpg"
+                alt="EUB utasbiztosítás"
+                title="EUB biztosításkötés"
+                class="partner-logo"
+              />
             </a>
           </v-col>
 
@@ -181,5 +194,19 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 
 .footer-link:hover {
   color: #22288d;
+}
+
+.partner-link {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.partner-link:hover {
+  opacity: 0.8;
+}
+
+.partner-logo {
+  max-height: 50px;
+  width: auto;
 }
 </style>
