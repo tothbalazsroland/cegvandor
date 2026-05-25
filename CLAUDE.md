@@ -36,6 +36,23 @@ npm run format       # Prettier formatting for src/
 
 **Branching**: `main` is the development branch; `gh-pages` holds built assets for GitHub Pages deployment.
 
+## Deployment
+
+**Target**: GitHub Pages on `gh-pages` branch with custom domain `cegvandor.hu` (stored in CNAME file).
+
+**Deploy steps**:
+
+1. Build the production bundle: `npm run build-only`
+2. Checkout gh-pages: `git checkout gh-pages`
+3. Save the CNAME file: `CNAME_CONTENT=$(cat CNAME)`
+4. Clear old files: `find . -maxdepth 1 -not -name '.git' -not -name '.' -exec rm -rf {} +`
+5. Copy new build: `cp -r dist/* .`
+6. Restore CNAME: `echo "$CNAME_CONTENT" > CNAME`
+7. Commit and push: `git add -A && git commit -m "Deploy: [description]" && git push origin gh-pages`
+8. Return to main: `git checkout main`
+
+**Important**: Always preserve the CNAME file during deployment — it specifies the custom domain for GitHub Pages.
+
 ## Code Style
 
 - Prettier: `semi: false`, `singleQuote: true`, `printWidth: 100`
